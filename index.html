@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 	<html lang="ru">
 	<head>
 		<meta charset="UTF-8">
-		<title>Резюме</title>
+		<title>Мое резюме</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="css/bootstrap.css" rel="stylesheet" media="screen">
 		<link href="css/bootstrap-theme.css" rel="stylesheet" media="screen">
@@ -17,10 +17,10 @@
 				<img  src="img/avatar.png">
 			</div>
 			<div class="col-md-6">
-				<form name="form1" action="action.php" method="post">
+				<form name="form1" method="post" action="action.php">
 					<div id="name">
 						<p>Введите Имя:</p>
-							<input type="text" class="form-control" name="name" placeholder="Name">
+							<input type="text" class="form-control" name="myname" placeholder="Name">
 					</div>
 					<div id="surname">
 						<p>Введите Фамилию:</p>
@@ -28,60 +28,60 @@
 					</div>
 							<p>Дата рождения:</p>
 						<div id="dateID">
-							<select class="form-control" name="date">
-							  <option id="num1">1</option>
-							  <option id="num2">2</option>
-							  <option id="num3">3</option>
-							  <option id="num4">4</option>
-							  <option id="num5">5</option>
-							  <option id="num6">6</option>
-							  <option id="num7">7</option>
-							  <option id="num8">8</option>
-							  <option id="num9">9</option>
-							  <option id="num10">10</option>
-							  <option id="num11">11</option>
-							  <option id="num12">12</option>
-							  <option id="num13">13</option>
-							  <option id="num14">14</option>
-							  <option id="num15">15</option>
-							  <option id="num16">16</option>
-							  <option id="num17">17</option>
-							  <option id="num18">18</option>
-							  <option id="num19">19</option>
-							  <option id="num20">20</option>
-							  <option id="num21">21</option>
-							  <option id="num22">22</option>
-							  <option id="num23">23</option>
-							  <option id="num24">24</option>
-							  <option id="num25">25</option>
-							  <option id="num26">26</option>
-							  <option id="num27">27</option>
-							  <option id="num28">28</option>
-							  <option id="num29">29</option>
-							  <option id="num30">30</option>
-							  <option id="num31">31</option>
+							<select class="form-control" name=day_m[]>
+							  <option value=1>1</option>
+							  <option value=2>2</option>
+							  <option value=3>3</option>
+							  <option value=4>4</option>
+							  <option value=5>5</option>
+							  <option value=6>6</option>
+							  <option value=7>7</option>
+							  <option value=8>8</option>
+							  <option value=9>9</option>
+							  <option value=10>10</option>
+							  <option value=11>11</option>
+							  <option value=12>12</option>
+							  <option value=13>13</option>
+							  <option value=14>14</option>
+							  <option value=15>15</option>
+							  <option value=16>16</option>
+							  <option value=17>17</option>
+							  <option value=18>18</option>
+							  <option value=19>19</option>
+							  <option value=20>20</option>
+							  <option value=21>21</option>
+							  <option value=22>22</option>
+							  <option value=23>23</option>
+							  <option value=24>24</option>
+							  <option value=25>25</option>
+							  <option value=26>26</option>
+							  <option value=27>27</option>
+							  <option value=28>28</option>
+							  <option value=29>29</option>
+							  <option value=30>30</option>
+							  <option value=31>31</option>
 							</select>
 						</div>
 						<p>Месяц рождения:</p>
 						<div id="month">
-							<select class="form-control">
-							  <option id="January">Январь</option>
-							  <option id="February">Февраль</option>
-							  <option id="March">Март</option>
-							  <option id="April">Апрель</option>
-							  <option id="May">Май</option>
-							  <option id="June">Июнь</option>
-							  <option id="July">Июль</option>
-							  <option id="August">Август</option>
-							  <option id="September">Сентябрь</option>
-							  <option id="October">Октябрь</option>
-							  <option id="November">Ноябрь</option>
-							  <option id="December">Декабрь</option>
+							<select class="form-control" name=month_m[]>
+							  <option value="January">Январь</option>
+							  <option value="February">Февраль</option>
+							  <option value="March">Март</option>
+							  <option value="April">Апрель</option>
+							  <option value="May">Май</option>
+							  <option value="June">Июнь</option>
+							  <option value="July">Июль</option>
+							  <option value="August">Август</option>
+							  <option value="September">Сентябрь</option>
+							  <option value="October">Октябрь</option>
+							  <option value="November">Ноябрь</option>
+							  <option value="December">Декабрь</option>
 							</select>
 						</div>
 						<p>Год рождения:</p>
 						<div id="year">
-							<input type="text" class="form-control" name="$year" placeholder="">
+							<input type="text" class="form-control" name="year" placeholder="">
 						</div>
 					Место жительства: г.Харьков<br>
 					Моб.телефон:+38(099)207-21-00<br>
@@ -137,52 +137,34 @@
 					<div class="tab-pane fade" id="tab-4">
 						<h4>Вакансия или учебный проект на который я подаю заявку</h4>
 						<div id="select">
-						<select class="form-control">
-							<option id="JuniorPHP">Junior PHP</option>
-							<option id="InternPHP">Intern PHP</option>
-							<option id="InternPHP_developer">Intern PHP developer</option>
-							<option id="JuniorPHP_developer">Junior PHP developer</option>
+						<select class="form-control" name=job[]>
+							<option value="JuniorPHP">Junior PHP</option>
+							<option value="InternPHP">Intern PHP</option>
+							<option value="InternPHP_developer">Intern PHP developer</option>
+							<option value="JuniorPHP_developer">Junior PHP developer</option>
 						</select>
 						</div>
 						<label class="checkbox-inline">
-							<input type="checkbox" id="inlineCheckbox1" value="option1">Опыт работы отсутствует
+							<input type="checkbox" id="inlineCheckbox1" name=checkbox1[] value="">Опыт работы отсутствует
 						</label>
 						<label class="checkbox-inline">
-							<input type="checkbox" id="inlineCheckbox2" value="option2">Есть опыт работы в IT
+							<input type="checkbox" id="inlineCheckbox2" name=checkbox2[] value="">Есть опыт работы в IT
 						</label>
 							<label class="checkbox-inline">
-							<input type="checkbox" id="inlineCheckbox3" value="option3">Есть опыт работы в других сферах
+							<input type="checkbox" id="inlineCheckbox3" name=checkbox3[] value="">Есть опыт работы в других сферах
 						</label>
 					</div>
 				</div>
 			</div>
-			<button type="button" name="send" class="btn btn-primary">Отправить</button>
-			<button type="reset" name="delete" class="btn btn-primary">Очистить</button>
+				<div id="buttons">
+				<button type="submit" name="send" class="btn btn-primary">Отправить</button>
+				<button type="reset" name="delete" class="btn btn-primary">Очистить</button>
+			</div>
 			</form>
 	</div>
 	</div>
+
 	<script src="http://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
-	<?php
-$user=array(
-	"fio"=>"Буряк Евгения Анатольевна",
-	"age"=>"31.10.1981",
-	"adress"=>"г.Харьков",
-	"email"=>"djes131@yandex.ua",
-	"phone"=>"80992072100");
-echo "<b>Данные пользователя:</b>"."<br>";
-foreach ($user as $key => $value) {
-	echo "$key=>$value<br>\n";
-}
-$name='Yevgeniya';
-$letterArray=array('A','E', 'I', 'O', 'U','Y');
-if (in_array($name[0], $letterArray)) {
-	echo "Гласная";
-} else {
-	echo "Согласная";
-}
-if('year'=='1981')
-	echo "Доступ открыт для пользователя";
-?>
 	</body>
 	</html>

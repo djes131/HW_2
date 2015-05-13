@@ -1,0 +1,40 @@
+.container{
+	background: #e0ffff;
+}
+#dateID{
+	width: 80px;
+}
+#month{
+	width: 120px;
+}
+#year{
+	width: 100px;
+}
+#name{
+	font-size: 14pt;
+	width: 150px;
+}
+#surname{
+	font-size: 14pt;
+	width: 250px;
+}
+#select{
+	width: 250px;
+	height: 33px;
+}
+.tabs{
+	margin-top: 40px;
+}
+#tab-1,#tab-2,#tab-3{
+	font-family: Tahoma,Geneva,sans-serif;
+	font-size: 12pt;
+	padding-top: 20px;
+}
+.form-control{
+	width: 30px;
+	height: 33px;
+
+}
+#buttons{
+	margin-top: 20px;
+}
